@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hamburgueria Casa da Gente</title>
+    <meta name="description" content="Os melhores hambúrgueres artesanais da cidade. Delivery rápido e ingredientes frescos.">
+    
+    <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.js"></script>
+    
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="header">
+        <div class="header-content">
+            <div class="logo-space">
+                <img src="img/logo2.png" alt="Logo" id="logoImage">
+            </div>
+            <div class="header-title">CASA DA GENTE</div>
+        </div>
+    </header>
+
+    <main class="main-content">
+        <div class="carousel-container">
+            <div class="carousel">
+                <div class="carousel-item"></div>
+                <div class="carousel-item"></div>
+                <div class="carousel-item"></div>
+                <div class="carousel-item"></div>
+                <div class="carousel-item"></div>
+            </div>
+            <div class="carousel-indicators">
+                <div class="indicator"></div>
+                <div class="indicator"></div>
+                <div class="indicator"></div>
+                <div class="indicator"></div>
+                <div class="indicator"></div>
+            </div>
+        </div>
+
+        <div class="social-icons">
+            <div class="social-icon" onclick="openWhatsApp()">
+                <img src="img/whatsapp.png" alt="WhatsApp">
+            </div>
+            <div class="social-icon" onclick="openIfood()">
+                <img src="img/ifood.png" alt="iFood">
+            </div>
+            <div class="social-icon" onclick="openInstagram()">
+                <img src="img/instagram.png" alt="Instagram">
+            </div>
+        </div>
+        
+        <div class="button-spacing">
+            <button class="main-button" onclick="openMenu()">VER CARDÁPIO COMPLETO</button>
+        </div>
+        <div class="button-spacing">
+            <button class="review-button" onclick="openGoogleReview()">AVALIAR NO GOOGLE</button>
+        </div>
+        <div class="button-spacing">
+            <div class="secondary-buttons">
+                <button class="secondary-button" onclick="openPixModal()">PIX</button>
+                <button class="secondary-button" onclick="downloadContact()">CONTATO</button>
+            </div>
+        </div>
+    </main>
+
+    <div id="pixModal" class="modal">
+        <div class="modal-content">
+            <button class="close-btn" onclick="closePixModal()"><i data-lucide="x"></i></button>
+            <h2>Pagamento PIX</h2>
+            <div class="pix-info">
+                <p><strong>Chave PIX:</strong></p>
+                <div class="pix-key" id="pixKey">"Sua Chave Pix"</div>
+                <div class="qr-code">QR Code do PIX</div>
+                <button class="copy-btn" onclick="copyPixKey()">COPIAR CHAVE PIX</button>
+                <div id="copySuccess" class="copy-feedback">Chave PIX copiada!</div>
+            </div>
+        </div>
+    </div>
+
+    <div class="wifi-section-container">
+        <h2 class="wifi-title-new">WiFi Gratuito</h2>
+        <p class="wifi-text-new">Rede: Casa da Gente Clientes</p>
+        <p class="wifi-text-new">Senha: senha2025</p>
+        <button class="wifi-button-new" onclick="copyWifiPassword()">COPIAR SENHA</button>
+        <p id="wifi-copy-success" class="copy-feedback">Senha copiada!</p>
+        <img src="https://api.qrserver.com/v1/create-qr-code/?size=180x180&data=WIFI:S:BurgerHouse_WiFi;T:WPA;P:burger2024;;" alt="QR Code para conectar ao WiFi" class="wifi-qrcode-new">
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
