@@ -117,11 +117,11 @@ body {
     background-position: center;
 }
 
-.carousel-item:nth-child(1) { background-image: url('../img/cheddar.jpg'); }
-.carousel-item:nth-child(2) { background-image: url('../img/cheese.jpg'); }
-.carousel-item:nth-child(3) { background-image: url('../img/classico.jpg'); }
-.carousel-item:nth-child(4) { background-image: url('../img/coalho.jpg'); }
-.carousel-item:nth-child(5) { background-image: url('../img/onions.jpg'); }
+.carousel-item:nth-child(1) { background-image: url('img/cheddar.jpg'); }
+.carousel-item:nth-child(2) { background-image: url('img/cheese.jpg'); }
+.carousel-item:nth-child(3) { background-image: url('img/classico.jpg'); }
+.carousel-item:nth-child(4) { background-image: url('img/coalho.jpg'); }
+.carousel-item:nth-child(5) { background-image: url('img/onions.jpg'); }
 
 .carousel-indicators {
     position: absolute;
